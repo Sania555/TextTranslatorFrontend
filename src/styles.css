@@ -1,0 +1,124 @@
+body {
+  background: url('./background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.home-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; 
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px; 
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px; 
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; 
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 22px; 
+  margin-bottom: 15px;
+}
+
+textarea, input {
+  width: 100%;
+  height: 40px; 
+  padding: 8px;
+  font-size: 14px; 
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.translated-text {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.history-container {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+}
+
+.history-container ul {
+  padding: 0;
+  list-style: none;
+}
+
+.history-container li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #f0f0f0;
+  border-radius: 8px;
+}
+
+.history-container p {
+  font-size: 16px;
+  color: green;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
